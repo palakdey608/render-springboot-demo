@@ -8,6 +8,10 @@ import java.util.List;
 
 @RestController
 public class HelloController {
+    @GetMapping("/")
+    public String home() {
+       return "Welcome to Spring Boot Deployment!";
+    }
 
     @GetMapping("/hello")
     public String hello() {
